@@ -3,6 +3,10 @@
   font-family: Montserrat, Orbitron, Dongle;
 }
 
+.font-family-orbitron {
+  font-family: Orbitron !important;
+}
+
 .bg-dark {
   background-color: #182550 !important;
 }
@@ -50,8 +54,8 @@
 }
 
 .c-access {
-  width: 100vw;
-  height: calc(100vh - 56px);
+  width: 100%;
+  height: calc(100vh - 88px);
 }
 
 .c-access__header {

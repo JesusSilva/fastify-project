@@ -10,6 +10,7 @@ import { DDBB } from './config';
 
 import { main_router } from './routers/main.router';
 import { auth_router } from './routers/auth.router';
+import { middlewareEnviroment } from './middlewares/environment.middleware';
 
 export const main_app: FastifyPluginAsync = async (app) => {
   mongoose.connect(DDBB).then(() => app.log.info('Connected to MongoDB at ' + DDBB));
@@ -32,6 +33,7 @@ export const main_app: FastifyPluginAsync = async (app) => {
   });
 
   app.register(formBodyPlugin);
+  app.register(middlewareEnviroment);
 
   app.register(main_router);
   app.register(auth_router, { prefix: '/auth' });
