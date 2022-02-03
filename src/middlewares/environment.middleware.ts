@@ -93,6 +93,7 @@ declare module 'fastify' {
  * Por último deberemos registrar este middleware en nuestro fichero app.ts
  */
 export const middlewareEnviroment: FastifyPluginAsync = fastifyPlugin(async (app) => {
+  app.log.info('Adding environment middleware in onRequest');
   app.addHook('onRequest', async (req, res) => {
     req.browser = getBrowser(req);
     req.os = getOS(req);
