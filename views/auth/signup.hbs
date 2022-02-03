@@ -1,0 +1,34 @@
+<section class="c-access">
+  <section
+    class="container d-flex flex-column justify-content-center align-items-center w-100 h-100"
+  >
+    <div class="c-access__header mb-5">
+      <h1>Create an account</h1>
+    </div>
+    <div class="c-access__form">
+      <form action="/signup" method="post" class="w-100">
+        <div class="mb-3">
+          <label for="username" class="form-label">Username</label>
+          <input type="text" class="form-control form-control-lg" id="username" />
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email address</label>
+          <input type="email" class="form-control form-control-lg" id="email" />
+        </div>
+        <div class="mb-4">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" class="form-control form-control-lg" id="password" />
+        </div>
+        <div class="mb-3">
+          <button type="submit" class="btn btn-lg btn-primary">
+            <i class="bi bi-door-open me-2"></i>Submit
+          </button>
+        </div>
+        <div class="create-aacount">
+          Already registered?
+          <a href="/auth/signin" class="c-access__link">Sign In</a>
+        </div>
+      </form>
+    </div>
+  </section>
+</section>

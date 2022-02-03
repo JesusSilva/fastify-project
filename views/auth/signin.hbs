@@ -1,0 +1,46 @@
+<section class="c-access">
+  <section
+    class="container d-flex flex-column justify-content-center align-items-center w-100 h-100"
+  >
+    <div class="c-access__header mb-5">
+      <h1>Sign in to your account</h1>
+      <div class="c-access__alternative-login">
+        <button type="button" class="btn btn-light">
+          <i class="bi bi-google me-2"></i>Google
+        </button>
+        <button type="button" class="btn btn-dark">
+          <i class="bi bi-github me-2"></i>Github
+        </button>
+      </div>
+      <div class="seperator">
+        <span>or do it via E-mail</span>
+      </div>
+    </div>
+    <div class="c-access__form">
+      <form action="/login" method="post" class="w-100">
+        <div class="mb-3">
+          <label for="email" class="form-label">Email address</label>
+          <input
+            type="email"
+            class="form-control form-control-lg"
+            id="email"
+            aria-describedby="emailHelp"
+          />
+        </div>
+        <div class="mb-4">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" class="form-control form-control-lg" id="password" />
+        </div>
+        <div class="mb-3">
+          <button type="submit" class="btn btn-lg btn-primary">
+            <i class="bi bi-door-open me-2"></i>Submit
+          </button>
+        </div>
+        <div class="create-aacount">
+          Not registered yet?
+          <a href="/auth/signup" class="c-access__link">Create an Account</a>
+        </div>
+      </form>
+    </div>
+  </section>
+</section>

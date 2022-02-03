@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Montserrat:wght@400;500;700&family=Orbitron&family=Prompt:wght@400;500;700&display=swap");
+* {
+  font-family: Montserrat, Orbitron, Dongle;
+}
+
+.bg-dark {
+  background-color: #182550 !important;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #182550;
+  border-color: #182550;
+}
+
+.seperator {
+  position: relative;
+}
+
+.seperator:before {
+  content: "";
+  position: absolute;
+  top: 35%;
+  left: -120px;
+  z-index: 1;
+  height: 1px;
+  width: 100%;
+  background-color: lightgray;
+}
+
+.seperator:after {
+  content: "";
+  position: absolute;
+  top: 35%;
+  left: 120px;
+  z-index: 1;
+  height: 1px;
+  width: 100%;
+  background-color: lightgray;
+}
+
+.seperator span {
+  background-color: white;
+  padding: 0 1rem;
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+  color: lightgray;
+  margin-bottom: 0.5rem;
+}
+
+.c-access {
+  width: 100vw;
+  height: calc(100vh - 56px);
+}
+
+.c-access__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 32px;
+}
+
+.c-access__header h1 {
+  color: #182550;
+}
+
+.c-access__alternative-login {
+  margin-bottom: 32px;
+}
+
+.c-access__alternative-login button {
+  margin: 16px 8px;
+}
+
+.c-access__form {
+  width: 100%;
+  max-width: 464px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.c-access__form button {
+  width: 100%;
+}
+
+.c-access__link {
+  color: #182550;
+}
+/*# sourceMappingURL=styles.css.map */
